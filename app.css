@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+}
+
+/* Navbar */
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #131921;
+    height: 60px;
+}
+
+.logo{
+    width: 130px;
+    height: auto;
+}
+
+.navbar-link{
+    text-decoration: none;
+    padding: 6px;
+}
+.navbar-link:hover{
+    border: 1px solid white;
+}
+i{
+    margin: 6px;
+}
+
+.dropdown{
+    /* --dropdown-width: 65px; */
+    padding: 13px;
+    border-radius: 6px 0 0 6px;
+    width: auto;
+    border: 1px solid grey;
+}
+.input-text{
+    width: 650px;
+    /* border-radius: 0 5px 5px 0; */
+    height: 45px;
+    border: 1px solid grey;
+    padding: 20px;
+}
+input[type=text]:focus{
+    border: 2px solid #ff9900;
+    border-radius: 8px;
+    outline: none;
+}
+.dropdown:focus{
+    outline: none;
+    border: 2px solid #ff9900;
+    border-radius: 8px;
+}
+.form-nav{
+    justify-content: flex-start;
+    align-content: center;
+}
+.btn-search{
+    padding: 8.5px;
+    border-radius: 0 6px 6px 0;
+    border: 1px solid grey;
+    background-color: #f3a846;
+}
+#lang{
+    background-color: #131921;
+    padding: 8px;
+    width: 75px;
+}
+
+
+/* Flexbox Classess */
+.flex-row{
+    display: flex;
+}
+
+.flex-center{
+    align-self: center;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Color */
+
+.col-white{
+    color: white;
+}
+
+.col-black{
+    color: black;
+}
+
+/* Fonts */
+
+.size-s{
+    font-size: 1.4rem;
+}
