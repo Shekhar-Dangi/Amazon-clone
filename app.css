@@ -3,8 +3,10 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 12px;
+    font-size: 16px;
+}
+body{
+    background-color: #c4e4bd;
 }
 
 /* Navbar */
@@ -26,6 +28,7 @@
 .navbar-link{
     text-decoration: none;
     padding: 6px;
+    color: white;
 }
 .navbar-link:hover{
     border: 1px solid white;
@@ -62,7 +65,7 @@ input[type=text]:focus{
     justify-content: flex-start;
     align-content: center;
 }
-.btn-search{
+.btn{
     padding: 8.5px;
     border-radius: 0 6px 6px 0;
     border: 1px solid grey;
@@ -73,7 +76,67 @@ input[type=text]:focus{
     padding: 8px;
     width: 75px;
 }
-
+.popup{
+    position: absolute;
+    top: 60px;
+    left: 60%;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+.btn-auth{
+    width:180px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #ffd812;
+}
+.btn-auth:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.box{
+    padding: 30px;
+    text-align: left;
+}
+.box p{
+    margin: 7px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.box .link{
+    padding: 4px;
+}
+.link:hover{
+    color: #f3a846;
+    text-decoration: underline;
+}
+.hover-hid:hover + div{
+    display: flex;
+    flex-direction: column;
+}
+.popup:hover{
+    display: flex;
+    flex-direction: column;
+}
+.triangle{
+    display: none  ;
+    width: 0;
+    height: 0;
+    border-left: 39px solid transparent; 
+    border-right: 39px solid transparent; 
+    border-bottom: 70px solid white;
+    position: absolute;
+    top: 50px;
+    left: 84%;
+}
+.hover-hid:hover .triangle{
+    display: block;
+}
 
 /* Flexbox Classess */
 .flex-row{
@@ -102,5 +165,20 @@ input[type=text]:focus{
 /* Fonts */
 
 .size-s{
-    font-size: 1.4rem;
+    font-size: 0.75rem;
+}
+
+/* Borders */
+
+.border-right{
+    border-right: 1px solid grey;
+}
+.border-left{
+    border-left: 1px solid grey;
+}
+.border-top{
+    border-top: 1px solid grey;
+}
+.border-bottom{
+    border-bottom: 1px solid grey;
 }

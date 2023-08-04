@@ -25,28 +25,34 @@
           style="color: #cbced2"
         ></i>
         <div class="flex-col">
-          <span>Hello</span><span><b class="size-s">Select your address</b></span>
+          <span class="size-s">Hello</span
+          ><span><b class="">Select your address</b></span>
         </div>
       </a>
       <form action="">
         <div class="flex-row form-nav">
-          <select class="dropdown col-black" name="category" id="category">
+          <select
+            class="dropdown col-black size-s"
+            name="category"
+            id="category"
+          >
             <option value="Daily Items">Daily Items</option>
             <option value="Alexa Skills">Alexa Skills</option>
             <option value="Amazon Devices">Amazon Devices</option>
             <option value="Amazon Fashion">Amazon Fashion</option>
             <option value="Amazon Pharmacy">Amazon Pharmacy</option></select
-          ><input type="text" name="search_value" class="input-text col-black size-s" /><button
-            type="submit"
-            class="btn-search"
-          >
-            <i class="fa-solid fa-magnifying-glass"></i>
+          ><input
+            type="text"
+            name="search_value"
+            class="input-text col-black"
+          /><button type="submit" class="btn">
+            <i class="size-s fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
       </form>
       <a class="" href="">
         <form action="">
-          <select class="dropdown col-white" name="lang" id="lang">
+          <select class="size-s dropdown col-white" name="lang" id="lang">
             <option value="English">🇮🇳 EN</option>
             <option value="Hindi">हिन्दी - HI</option>
             <option value="TA">தமிழ் - TA</option>
@@ -54,9 +60,44 @@
           </select>
         </form>
       </a>
-      <a class="navbar-link flex-col" href=""><span>Hello, sign in</span><span><b class="size-s">Accounts & Lists</b></span> </a>
-      <a class="navbar-link flex-col" href=""><span>Return &</span><b class="size-s">Orders</b></a>
-      <a class="navbar-link" href=""><b class="size-s"><i class="fa-solid fa-cart-shopping"></i> Cart</b></a>
+      <a class="hover-hid navbar-link flex-col" href=""
+        ><span class="size-s">Hello, sign in</span
+        ><span><b class="">Accounts & Lists</b></span>
+        <div class="triangle"></div>
+      </a>
+      <div class="col-black popup hide-d" href="">
+        <div class="btn btn-auth">Sign In</div>
+        <p class="size-s">
+          New customer? <a class="size-s" href="">Start here</a>
+        </p>
+        <div class="flex-row border-top">
+          <div class="border-right box flex-col">
+            <p><b>Your Lists</b></p>
+            <a class="link size-s" href="">Create a wishlist</a>
+            <a class="link size-s" href="">Baby Wishlist</a>
+            <a class="link size-s" href="">Discover Your Style</a>
+            <a class="link size-s" href="">Explore Showroom</a>
+          </div>
+          <div class="box flex-col">
+            <p><b>Your Account</b></p>
+            <a class="link size-s" href="">Your Account</a>
+            <a class="link size-s" href="">Your Orders</a>
+            <a class="link size-s" href="">Your Wish List</a>
+            <a class="link size-s" href="">Your Prime Video</a>
+            <a class="link size-s" href="">Your Seller Account</a>
+            <a class="link size-s" href="">Manage Your Content and Devices</a>
+            <a class="link size-s" href="">Your Membership </a>
+            <a class="link size-s" href="">Reset Your Account</a>
+            <a class="link size-s" href="">Contact Shekhar</a>
+          </div>
+        </div>
+      </div>
+      <a class="navbar-link flex-col" href=""
+        ><span class="size-s">Return &</span><b class="">Orders</b></a
+      >
+      <a class="navbar-link" href=""
+        ><b class=""><i class="fa-solid fa-cart-shopping"></i> Cart</b></a
+      >
     </nav>
   </body>
 </html>
