@@ -17,6 +17,8 @@ body {
   align-items: center;
   background-color: #131921;
   height: 60px;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
@@ -31,6 +33,10 @@ body {
 }
 .navbar-link:hover {
   border: 1px solid white;
+}
+.nav-2 {
+  padding: 4px;
+  height: 40px;
 }
 i {
   margin: 6px;
@@ -194,6 +200,45 @@ main {
   border-radius: 2px;
   margin: 9px;
 }
+.foot-end--container > a {
+  margin: 7px 0;
+}
+footer {
+  background-color: #222f3e;
+  /* height: 450px; */
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 0;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer div div {
+  margin: 0 100px;
+}
+
+footer > div {
+  border-bottom: 1px solid grey;
+}
+.dropdown-foot {
+  height: 39px;
+  padding: 3px;
+  color: white;
+  background-color: #222f3e;
+  margin: 40px;
+}
+
+.foot {
+  align-items: center;
+}
+.foot logo {
+  width: 185px;
+}
 /* Flexbox Classess */
 .flex-row {
   display: flex;
@@ -221,6 +266,9 @@ main {
 .align-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 
 /* Color */
 
@@ -237,8 +285,17 @@ main {
 .col-red {
   color: red;
 }
+.col-grey {
+  color: grey;
+}
 .bg-wheat {
   background-color: rgb(180, 182, 189);
+}
+.bg-foot {
+  background-color: #121a22;
+}
+.bg-nav {
+  background-color: #222f3e;
 }
 
 /* Fonts */
@@ -249,7 +306,12 @@ main {
 .size-s2 {
   font-size: 0.8rem;
 }
-
+.size-s3 {
+  font-size: 0.7rem;
+}
+.size-b {
+  font-size: 1.3rem;
+}
 /* Borders */
 
 .border-right {
@@ -269,4 +331,20 @@ main {
 
 .padd-2 {
   padding: 2px;
+}
+
+.padd-box--large {
+  padding: 120px 230px;
+}
+
+.padd-box--small {
+  padding: 30px 230px;
+}
+.mar-13h {
+  /* padding: 0 13px; */
+  margin: 1px 13px;
+}
+
+.mar-15v {
+  margin: 15px 0;
 }
